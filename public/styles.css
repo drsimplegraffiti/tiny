@@ -7,7 +7,7 @@ body {
 
 h1 {
   text-align: center;
-  color: white;
+  color: #fff;
   font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
@@ -26,6 +26,7 @@ h2 {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
   border-radius: 2px;
   border-radius: 5px;
+  z-index: 50;
 }
 
 #tiny-window {
@@ -82,5 +83,16 @@ button {
 
 button:hover {
   background: #6200ea;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: -40;
 }
 /*# sourceMappingURL=styles.css.map */
