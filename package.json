@@ -4,7 +4,7 @@
     "description": "tiny e-commerce app",
     "main": "app.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "mocha || true",
         "start": "node app.js",
         "dev": "nodemon app.js"
     },
@@ -15,6 +15,8 @@
         "socket.io": "^4.1.2"
     },
     "devDependencies": {
+        "chai": "^4.3.4",
+        "mocha": "^9.0.1",
         "nodemon": "^2.0.7"
     }
 }

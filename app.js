@@ -29,3 +29,10 @@ io.on('connection', (socket) => {
     });
 
 });
+
+// Unit testing
+module.exports = {
+    server: function() {
+        return 'server is listen to request on port 3000'
+    }
+}
