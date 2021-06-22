@@ -6,13 +6,17 @@
     "scripts": {
         "test": "mocha || true",
         "start": "node app.js",
-        "dev": "nodemon app.js"
+        "dev": "nodemon app.js",
+        "lambda-serve": "netlify-lambda serve functions",
+        "lambda-build": "netlify-lambda build functions"
     },
     "author": "Abayomi Ogunnusi",
     "license": "ISC",
     "dependencies": {
         "dotenv": "^10.0.0",
         "express": "^4.17.1",
+        "netlify-lambda": "^2.0.10",
+        "serverless-http": "^2.7.0",
         "socket.io": "^4.1.2"
     },
     "devDependencies": {

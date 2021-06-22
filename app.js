@@ -1,4 +1,5 @@
 const express = require('express');
+const serverless = require('serverless-http');
 const socket = require('socket.io');
 const dotenv = require('dotenv');
 dotenv.config();
@@ -40,3 +41,6 @@ module.exports = {
         return 'server is listen to request on port 3000'
     }
 }
+
+// Serverless export module
+module.exports.handler = serverless(app);
