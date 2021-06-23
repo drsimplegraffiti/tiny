@@ -5,7 +5,7 @@
     "main": "app.js",
     "scripts": {
         "test": "mocha || true",
-        "start": "node app.js",
+        "start": "node ./src/app.js",
         "dev": "nodemon ./src/app.js",
         "lambda-serve": "netlify-lambda serve functions",
         "lambda-build": "netlify-lambda build functions"
