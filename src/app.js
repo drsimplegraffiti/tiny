@@ -7,11 +7,15 @@ dotenv.config();
 
 const app = express();
 
-const { port } = process.env || 5000;
+// const { port } = process.env || 3000;
 
-const server = app.listen(port, () => {
-    console.log(`server is listen to request on port ${port}`);
-})
+// const server = app.listen(port, () => {
+//     console.log(`server is listen to request on port ${port}`);
+// })
+
+const server = app.listen(process.env.PORT || 8000, '0.0.0.0', () => {
+    console.log("Server is running.");
+});
 
 // Static files middleware
 app.use(express.static('public'));
