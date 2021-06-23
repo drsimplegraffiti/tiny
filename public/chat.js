@@ -1,5 +1,5 @@
 // Make connection front-end setup
-const socket = io.connect('http://localhost:3000');
+const socket = io.connect('http://localhost:8000');
 
 // Query DOM
 const message = document.getElementById('message'),
