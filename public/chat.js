@@ -1,5 +1,5 @@
 // Make connection front-end setup
-const socket = io.connect('http://localhost:8000');
+const socket = io.connect('http://localhost:3000');
 
 // Query DOM
 const message = document.getElementById('message'),
@@ -7,7 +7,6 @@ const message = document.getElementById('message'),
     btn = document.getElementById('send'),
     output = document.getElementById('output'),
     feedback = document.getElementById('feedback');
-
 
 // Emit events
 btn.addEventListener('click', function() {
