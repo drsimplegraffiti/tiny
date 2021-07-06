@@ -18,7 +18,6 @@ const server = app.listen(port, () => {
 // });
 
 // Static files middleware
-// app.use(express.static(__dirname + '/client'));
 app.use(express.static('public'));
 
 // Socket setup & pass server
