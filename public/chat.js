@@ -23,10 +23,10 @@ message.addEventListener('keypress', function() {
 
 // Listen for events- front_end
 socket.on('chat', function(data) {
-    feedback.textContent = '';
-    output.textContent += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
+    feedback.innerText = '';
+    output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
 });
 
 socket.on('typing', function(data) {
-    feedback.textContent = '<p><em>' + data + ' is typing a message...</em></p>';
+    feedback.innerHTML = '<p><em>' + data + ' is typing a message...</em></p>';
 });
